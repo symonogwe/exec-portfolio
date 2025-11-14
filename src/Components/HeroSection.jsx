@@ -44,7 +44,14 @@ const HeroSection = () => {
         zIndex={0}
       >
         <Particles
-          particleColors={["#EF233C", "#8D99AE"]}
+          particleColors={[
+            "#14213d",
+            "#fca311",
+            "#118ab2",
+            "#8D99AE",
+            "#0077b6",
+            "#EDF2F4",
+          ]}
           particleCount={1000}
           particleSpread={10}
           speed={0.2}
