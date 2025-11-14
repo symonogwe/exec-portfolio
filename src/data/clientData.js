@@ -2,13 +2,13 @@
 
 const clientData = {
   hero: {
-    name: "Symon Opondi",
-    role: "Frontend Developer",
+    name: "Executive Portfolio",
+    role: "Digital Solutions Specialist",
     tagline:
-      "I build fast, modern websites with beautiful design & performance in mind.",
+      "I create stunning digital products that drive business success and captivate users.",
     ctaText: "Let’s Work Together",
     image: "/assets/profile-pic.jpeg",
-    handle: "symonopo",
+    handle: "exec-portfolio",
   },
   socials: [
     {
@@ -33,19 +33,18 @@ const clientData = {
     },
   ],
   skills: [
-    { name: "React", icon: "SiReact" },
-    { name: "JavaScript", icon: "SiJavascript" },
-    { name: "Chakra UI", icon: "SiChakraui" },
-    { name: "TypeScript", icon: "SiTypescript" },
-    { name: "Framer Motion", icon: "SiFramer" },
-    { name: "Node.js", icon: "SiNodedotjs" },
-    { name: "CSS3", icon: "SiCss3" },
-    { name: "Project Management", icon: "FaRegLightbulb" }, // Generic "idea" icon
-    { name: "IT Business Analysis", icon: "BsFillPeopleFill" }, // User/people icon
-    { name: "Figma", icon: "SiFigma" },
-    { name: "Git & Github", icon: "SiGithub" },
-    { name: "Business Process Modelling", icon: "FaProjectDiagram" },
-    // Add more skills, set icon: null or leave undefined for text-only!
+    { name: "Graphic Design", icon: "FaPaintBrush" },
+    { name: "Social Media Management", icon: "FaInstagram" },
+    { name: "Web Design", icon: "MdWeb" },
+    { name: "Web Development", icon: "FaCode" },
+    { name: "Digital Marketing", icon: "FaBullhorn" },
+    { name: "Project Management", icon: "FaTasks" },
+    { name: "Digital Product Procurement", icon: "FaShoppingCart" },
+    { name: "Content Creation", icon: "FaPenNib" },
+    { name: "Video Editing", icon: "FaVideo" },
+    { name: "SEO Optimization", icon: "FaSearch" },
+    { name: "Email Marketing", icon: "MdEmail" },
+    { name: "Brand Strategy", icon: "FaStamp" },
   ],
   projects: [
     {

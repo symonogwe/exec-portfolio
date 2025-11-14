@@ -29,7 +29,7 @@ const HeroSection = () => {
     theme.colors.gradient.secondary
   );
 
-  const heroText = `Hi, I’m ${name}`;
+  const heroText = `Welcome to ${name}`;
 
   return (
     <Box position="relative" width="100%" minH={HERO_HEIGHT} overflow="hidden">
