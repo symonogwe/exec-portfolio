@@ -7,7 +7,7 @@ const clientData = {
     tagline:
       "I create stunning digital products that drive business success and captivate users.",
     ctaText: "Let’s Work Together",
-    image: "/assets/profile-pic.jpeg",
+    image: "/assets/graphic-design.jpg",
     handle: "exec-portfolio",
   },
   socials: [

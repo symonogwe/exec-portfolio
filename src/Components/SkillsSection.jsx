@@ -54,7 +54,7 @@ const SkillsSection = () => {
           viewport={{ once: true, amount: 0.7 }}
         >
           <ProfileCard
-            name={clientData.hero.name}
+            name={"exec portfolio"}
             title={clientData.hero.role}
             handle={clientData.hero.handle}
             status="Open To Work"
