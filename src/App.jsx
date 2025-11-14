@@ -5,7 +5,6 @@ import SkillsSection from "./Components/SkillsSection";
 import ProjectsSection from "./Components/ProjectsSection";
 import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
-import ArticlesSection from "./Components/ArticlesSection";
 import DesignsSection from "./Components/DesignsSection";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <SkillsSection />
       <ProjectsSection />
       <DesignsSection />
-      <ArticlesSection />
       <ContactSection />
       <Footer />
     </>
