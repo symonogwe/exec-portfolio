@@ -151,7 +151,7 @@ const HeroSection = () => {
             {tagline}
           </Text>
 
-          <HeroFolder />
+          {/* <HeroFolder /> */}
 
           <Flex
             w="100%"
