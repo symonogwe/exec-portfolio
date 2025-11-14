@@ -1,0 +1,116 @@
+:root {
+  --folder-color: #70a1ff;
+  --folder-back-color: #4785ff;
+  --paper-1: #fffbea; /* Gentle off-white paper, tweak as needed */
+}
+
+/* Core Folder */
+.folder {
+  transition: all 0.2s cubic-bezier(0.5, 1.8, 0.4, 0.9);
+  cursor: pointer;
+  will-change: transform;
+  user-select: none;
+}
+
+.folder:active {
+  transform: scale(0.97) translateY(-3px);
+}
+
+/* Smoother hover effect (optional) */
+.folder:not(.open):hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Hide paper when folder is closed */
+.folder:not(.open) .paper {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 10%) scale(0.88);
+  transition: all 0.42s cubic-bezier(0.33, 1.2, 0.5, 1);
+}
+
+/* Show and animate the card when folder is open */
+.folder.open .paper {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -76%) scale(1.1) rotateZ(-6deg);
+  box-shadow: 0 12px 56px #0002, 0 2px 16px #e9c46a44;
+  transition: all 0.38s cubic-bezier(0.33, 1.2, 0.5, 1);
+}
+
+/* Paper card styles */
+.paper {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  left: 50%;
+  width: 78px;
+  height: 104px;
+  background: var(--paper-1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.04rem;
+  color: #1d3557;
+  cursor: pointer;
+  box-shadow: 0 4px 24px #0002;
+  transition: all 0.38s cubic-bezier(0.33, 1.2, 0.5, 1);
+  text-align: center;
+  padding: 0.3em;
+  letter-spacing: 0.5px;
+}
+
+.paper:hover {
+  box-shadow: 0 8px 40px #2a9d8f30, 0 4px 24px #e9c46a60;
+  transform: translate(-50%, -88%) scale(1.14) rotateZ(-6deg);
+  background: #fffbe8;
+  color: #2a9d8f;
+}
+
+.folder__back {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  background: var(--folder-back-color);
+  border-radius: 0px 10px 10px 10px;
+}
+
+.folder__back::after {
+  position: absolute;
+  z-index: 0;
+  bottom: 98%;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 10px;
+  background: var(--folder-back-color);
+  border-radius: 5px 5px 0 0;
+}
+
+/* Folder front (lid) */
+.folder__front {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: var(--folder-color);
+  border-radius: 5px 10px 10px 10px;
+  transform-origin: bottom;
+  transition: all 0.34s cubic-bezier(0.33, 1.2, 0.5, 1);
+}
+
+.folder__front.right {
+  right: 0;
+  left: auto;
+  background: var(--folder-color);
+}
+
+.folder.open .folder__front {
+  transform: skew(15deg) scaleY(0.6);
+}
+
+.folder.open .folder__front.right {
+  transform: skew(-15deg) scaleY(0.6);
+}
