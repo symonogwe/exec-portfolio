@@ -26,7 +26,7 @@ const ContactSection = () => {
   const showMagnetLines = useBreakpointValue({ base: false, md: true });
 
   // MagnetLines: theme-aware and responsive!
-  const lineColor = useColorModeValue("#EF233C", "#8D99AE");
+  const lineColor = useColorModeValue("#118ab2", "#EDF2F4");
 
   return (
     <Box
